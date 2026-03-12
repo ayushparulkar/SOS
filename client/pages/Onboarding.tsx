@@ -67,7 +67,10 @@ export default function Onboarding() {
         </p>
 
         <Button
-          onClick={() => setShowOnboarding(true)}
+          onClick={() => {
+            setShowOnboarding(true);
+            setCurrentStep(1);
+          }}
           className="bg-emergency-red hover:bg-red-700 text-white px-8 py-3 rounded-full text-lg font-semibold"
         >
           Get Started
